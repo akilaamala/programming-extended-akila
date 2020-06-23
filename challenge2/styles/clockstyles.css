@@ -1,0 +1,111 @@
+body{
+   font-family: 'Titillium Web', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #50A89C;
+    padding: 0 100px; 
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+}
+
+.nav-title {
+  font-family: 'Titillium Web', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    font-size:30px;
+    left: 20%;
+}
+
+.bg-dawn{
+    background: linear-gradient(to right, rgba(174, 214, 241,1) 25%, rgba(250, 215, 160,1) 100%);
+}
+
+.bg-dusk{
+    background: linear-gradient(to right, rgba(195, 155, 211 ,1) 25%, rgba(133, 193, 233 ,1) 100%);
+}
+
+.text-light{
+    color: #FBFCFC ;
+}
+
+.text-dark{
+    color: #FBFCFC;
+}
+.container{
+    padding: 50px;
+    height: calc(100vh - 100px);
+}
+
+.clock-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    padding: 30px;
+    white-space: nowrap;
+}
+
+.clock{
+    font-size: 72px;
+}
+
+.date{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.heading{
+    font-size: 60px;
+    font-variant: small-caps;
+    margin: 10px;
+}
+
+.settings{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px 20px 0 0;
+    color: black;
+}
+
+.setting{
+    display: inline-block;
+    min-width: 20px;
+    margin: 0 10px;
+}
+
+.setting-name{
+    font-size: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.setting-option{
+    font-size: 15px;
+    background-color: blueviolet;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.theme-1{
+    background: linear-gradient(90deg, rgba(174, 214, 241 ,1) 0%, #39b3fa 50%, rgba(250, 215, 160 ,1) 96%);
+}
+
+.theme-2{
+    background: linear-gradient(90deg, rgba(195, 155, 211 ,1) 0%, rgba(133, 193, 233 ,1) 50%, rgba(26,147,111,1) 100%);
+}

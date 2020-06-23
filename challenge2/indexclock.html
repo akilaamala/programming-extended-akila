@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Martian Clock</title>
+    <link rel="stylesheet" href="styles/clockstyles.css">
+    <script src="script/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+<div class="navbar">
+        <div class="nav-title">
+            Mars Dome
+            <div class = "setting">
+                <div class="setting-option theme-1" onclick="setTheme(1)">
+                    Dawn
+                </div>
+                <div class="setting-option theme-2" onclick="setTheme(2)">
+                    Dusk
+                </div>
+            </div>
+        </div>
+    </div> 
+<div class="bg-dusk text-dark">
+    <div class="container">
+        <div class="clock-wrapper">
+            <h1 class="heading">Time</h1>
+            <div class="clock" id="clock">
+            </div>
+            <div id="date" class="date">
+            </div>
+        </div>
+        
+    </div>
+</div>
+</body>
+
+</html>
