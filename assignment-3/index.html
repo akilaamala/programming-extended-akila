@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Spot Website</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/maintwo.js"></script>
+    <script src="js/mainthree.js"></script>
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <h1 class="title text-white">Welcome to the Landing Spot Website</h1>
+                <p class="description"> Kennedy Space Center, Cape Canaveral, Florida, USA. </p>
+            </div>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+            <div class="wrapper" id="summary">
+                <div class="container">
+                    <div class="section-title text-warning">
+                        Information
+                    </div>
+                    <div class="row">
+                        <div class="content-card column bg-warning">
+                            <div class="row">
+                                <div class="column no-margin"></div>
+                                <div class="column no-margin">
+                                    <span id="asteroidCount" class="stats-text text-danger"></span>
+                                </div>
+                            </div>
+                            <small class="label">Asteroid for the Next 7 Days</small>
+                        </div>
+                        <div class="content-card column bg-warning">
+                            <div class="row">
+                                <div class="column no-margin"></div>
+                                <div class="column no-margin">
+                                    <span class="stats-text text-danger" id="summaryDisaster">
+                                        100
+                                    </span>
+                                </div>
+                            </div>
+                            <small class="label">Upcoming and Current Disasters</small>
+                        </div>
+                        <div class="content-card column bg-warning">
+                            <div class="row">
+                                <div class="column no-margin"></div>
+                                <div class="column no-margin">
+                                    <span class="stats-text text-danger" id="airQuality">
+                                    </span>
+                                </div>
+                            </div>
+                            <small class="label">Air Quality</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper" id="asteroid">
+                <div class="container">
+                    <div class="section-title text-warning">
+                        Asteroid
+                    </div>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="wrapper" id="disaster">
+                <div class="container">
+                    <div class="section-title text-warning">
+                       
+                        Preview Landing Spot
+                    </div>
+                    <div class="row bg-white">
+                        <div class="column no-margin">
+                            <form onsubmit="event.preventDefault(); getSpotPreview();">
+                                <div class="form-input">
+                                    <label for="zoom">Zoom Level</label>
+                                    <select id="zoom">
+                                        <option value="0">0x</option>
+                                        <option value="5">5x</option>
+                                        <option value="10" selected>10x</option>
+                                        <option value="15">15x</option>
+                                    </select>
+                                </div>
+                                <div class="form-input">
+                                    <label for="rotate">Rotate Camera (clockwise)</label>
+                                    <select id="rotate">
+                                        <option value="0">0°</option>
+                                        <option value="30">30°</option>
+                                        <option value="60">60°</option>
+                                        <option value="90">90°</option>
+                                    </select>
+                                </div>
+                                <div class="form-input">
+                                    <label for="tilt">Tilt Camera</label>
+                                    <select id="tilt">
+                                        <option value="0">0°</option>
+                                        <option value="15">15°</option>
+                                        <option value="30">30°</option>
+                                        <option value="45">45°</option>
+                                    </select>
+                                </div>
+                                <div class="form-input">
+                                    <div class="right">
+                                        <button class="bg-success" type="submit">Preview</button>
+                                        <button class="bg-danger" type="reset">Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="previewImage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

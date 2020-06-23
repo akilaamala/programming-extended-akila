@@ -1,0 +1,230 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+    background-color: gray;
+}
+
+
+
+
+.bg-success{background-color: #75daad;}
+.bg-warning{background-color: #ffd86e;}
+.bg-danger{background-color: #c51f4e;}
+.text-white{color:white}
+.text-primary{color: #4a47a3;}
+.text-info{color: #57a7ee;}
+.text-success{color: #75daad;}
+.text-warning{color: #ffd86e;}
+.text-danger{color: #c51f4e;}
+
+.container{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+#header{
+    height: 100vh;
+}
+
+.header-wrapper{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+#header .title{
+    color: black;
+    font-variant: small-caps;
+    font-size: 50px;
+    text-shadow: 0 0 10px rgb(82, 82, 82);
+    margin: 0;
+}
+
+#header .description{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 0 0 5px rgb(97, 97, 97);
+}
+
+
+#main .wrapper{
+    width: 100%;
+    min-height: 50vh;
+    margin: 75px 0;
+    padding-bottom: 30px;
+}
+
+
+.section-title{
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+    border-bottom: 1px solid rgb(255, 250, 173);
+    font-weight: 800;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 20px;
+}
+
+.content-card{
+    min-height: 100px;
+    padding: 20px;
+    border-radius: .5rem;
+}
+
+.content-card .row{
+    height: 100%;
+}
+
+.content-card img{
+    width: 100%;
+    margin: auto 0;
+}
+
+.stats-text{
+    text-align: center;
+    margin: auto;
+    padding-left: 5px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#weatherStatus .stats-text{
+    font-size: 1.5rem !important;
+}
+
+.no-margin{
+    margin: 0 !important;
+}
+
+.label{
+    color: rgb(82, 82, 82);
+    text-align: center;
+}
+
+#asteroid ul{
+    list-style: square;
+}
+
+#asteroid li{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    text-shadow: 0 0 1px #000000;
+}
+
+#asteroid li:hover{    
+    color: #c4ec56;
+}
+
+.asteroidTable{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.asteroidTable table{
+    width: 100%;
+    margin: 0;
+}
+
+.hide{
+    display: none;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+tr{
+    text-align: center;
+    height: 30px;
+    vertical-align: middle;
+    color: white;
+    font-weight: 700;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(21, 182, 45);
+}
+
+tr:nth-child(even){
+    background-color: rgb(85, 185, 100);
+}
+
+th{
+    background-color: white;
+    height: 40px;
+    font-weight:900;
+    color: darkslategray;
+}
+
+
+
+form label{
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 0 5px 0;
+    border-bottom: 2px solid #4a47a3;
+    color: #4a47a3;
+    font-weight: 800;
+}
+
+form select{
+    display: block;
+    background-color: #ffd86e;
+    border-radius: .5rem;
+    padding: 5px;
+    width: 100%;
+    font-size: 15px;
+    box-shadow: 0 2px 5px rgb(180, 180, 180);
+}
+
+.form-input{
+    margin-bottom: 10px;
+}
+
+#previewImage .preview-image{
+    width: 50%;
+    display: block;
+    margin: 30px auto;
+}
+
+.right{
+    display: block;
+    float: right;
+}
+
+form button{
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 10px 0;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px rgb(180, 180, 180);
+}
+
