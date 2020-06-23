@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Interplanetary Transport System Interface</title>
+	<link rel="stylesheet" type="text/css" href="styles/mystyles.css">
+			<script src="script/main.js"></script>
+			<link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+<style>
+	body {
+		background-color: #A9A9A9; 
+	}
+	</style>
+</head>
+
+
+<body>
+	<div class="navbar">
+		<div class="nav-title">
+			Interplanetary Transport System Interface
+		</div>
+	</div> 
+
+
+<div id="parameters" class="container">
+		<div class="section-title">
+			Ship Parameters
+		</div>
+
+		<div class="card bg-1">
+			<div class="card-title">Throttle</div>
+			<div class="card-body" id="throttle"></div>
+			<p> Throttle </p> <p class="units"> <input id="throttleValue" type="text" name="Throttle" value="0" onchange="calculate()"> % </p>
+		</div>
+
+		<div class="card bg-2">
+			<div class="card-title">Fuel</div>
+			<div class="card-body" id="fuel"></div>
+			<p> Fuel </p> <p class="units"> <input id="fuelValue" type="text" name="Fuel" value="100" disabled> liters/sec</p>
+
+		</div>
+
+		<div class="card bg-2">
+			<div class="card-title">Speed</div>
+			<div class="card-body" id="speed"></div>
+			<p> Speed </p> <p class="units"> <input id="speedValue" type="text" name="Speed" value="50" disabled> km/h </p>
+		</div>
+		<div class="card bg-4">
+			<div class="card-title">Acceleration</div>
+			<div class="card-body" id="g-force"></div>
+			<p> G-Force </p> <p class="units"> <input id="gforceValue" type="text" name="GForce" value="9.80665" disabled> g</p>
+		</div>
+	</div>
+
+	<div class="section-title">
+			Ship Environment
+			</div>
+		<div class="card bg-1">
+			<div class="card-title">Gravity</div>
+			<div class="card-body" id="gravity"></div>
+			<p>10</p>
+		</div>
+		<div class="card bg-2">
+			<div class="card-title">Traveled Distance</div>
+			<div class="card-body" id="distance"></div>
+		<p>12500 km</p>
+		</div>
+		<div class="card bg-2">
+			<div class="card-title">Atmosphere</div>
+			<div class="card-body" id="atmosphere"></div>
+		<p> 2 </p>
+		</div>
+		</div>
+
+	<div class="section-title">
+			Supplies
+		</div>
+		
+		<div class="card bg-1">
+			<div class="card-title">Food</div>
+			<div class="card-body" id="food"></div>
+			<div id="foodProgress">
+				<div id="barOne">1%</div>
+			</div>
+			
+			<br>
+		<button onclick="move()"> Check Supply </button> 
+
+		</div>
+		
+		<div class="card bg-1">
+			<div class="card-title">Water</div>
+			<div class="card-body" id="water"></div>
+			<div id="waterProgress">
+				<div id="barTwo">50%</div>
+			</div>
+			
+			<br>
+		<button> Supply Showed </button> 
+		</div>
+
+		</div>
+	</div>
+
+
+	<div class="section-title">
+			Metrics
+			<div class="card bg-1">
+			<div class="card-title">Gravity</div>
+			<div class="card-body" id="gravitymetrics"></div>
+			<p> 0 </p>
+		</div>
+		<div class="card bg-2">
+			<div class="card-title">Mars to Earth Miles</div>
+			<div class="card-body" id="marsmiles"></div>
+			<p>250 miles</p>
+		</div>
+
+
+
+</body>
+</html>

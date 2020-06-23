@@ -1,0 +1,111 @@
+body{
+	font-family: 'Inria Serif', serif;
+	color: #FFFFFF;
+	margin: 0;
+}
+
+.bg-1{
+	background-color: #50A89C;
+}
+.bg-2{
+	background-color: #50A89C;
+}
+.bg-3{
+	background-color: #50A89C;
+}
+.bg-4{
+	background-color: #50A89C;
+}
+
+.container { 
+	height: 100vh;
+	padding: 100px;
+	box-sizing: border-box;
+}
+
+.section-title{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 40px;	
+	font-weight: 800;
+	font-variant: small-caps;
+	margin-left:30px;	
+}
+
+.card {
+	display: inline-block;
+	margin: 1rem 1rem;
+	padding: 10px;
+	border-radius: 1rem;
+	width: 15rem;
+	text-align: center;
+}
+
+.card-title{
+	color: #321;
+	font-size: 20px;
+	font-weight: 800;
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid white;
+}
+
+.card-body{
+	color: maroon;
+	font-size: 40px
+}
+
+
+.hide {
+	display: none;
+}
+
+.navbar {
+	width: 100%;
+	height: 50px;
+	background-color: #50A89C;
+	padding: 0 100px; 
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+}
+
+.nav-title{
+	font-size: 24px;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+	font-weight: 600;
+	margin-right: 50px;
+}
+
+.navbar div{
+	display: inline-block;
+}
+
+.nav-item{
+	margin-right:15px;
+}
+
+.nav-link{
+	text-decoration: none;
+	color: #d0d0d0;
+}
+
+#barOne {
+	width: 1%;
+	height: 30px;
+	background-color: black;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}
+
+#barTwo {
+	width: 50%;
+	height: 30px;
+	background-color: black;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}
